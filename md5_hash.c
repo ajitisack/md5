@@ -142,12 +142,12 @@ char *md5(UCHAR *str) {
 int main(int argc, char const *argv[]) {
         //UCHAR *str = "Hello World!";
         //UCHAR *str = "9024653681I01";
-		if (argc != 2 ) {
-			printf("ERROR   : input string or text is missing.\n");
-			printf("Syntax  : %s <text>\n", argv[0]);
-			printf("Example : %s \"Hello World 123\"\n", argv[0]);
-			return 1;
-		}	
+	if (argc != 2 ) {
+		printf("ERROR   : input string or text is missing.\n");
+		printf("Syntax  : %s <text>\n", argv[0]);
+		printf("Example : %s \"Hello World 123\"\n", argv[0]);
+		return 1;
+	}	
         printf("MD5(\"%s\") = %s\n", argv[1], md5(argv[1]));
         return 0;
 }
